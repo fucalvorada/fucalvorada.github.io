@@ -1,216 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<meta name="author" content="Vivaweb Internet">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta http-equiv="Content-Language" content="pt-BR">
-	<title>dloja</title>
+	<title></title>
+</head>
 
-	
+<style type="text/css">
 
-	<link href="/favicon.ico" rel="icon" type="image/vnd.microsoft.icon">
-	<style type="text/css" media="screen">
-
-	#conteudo-login{
-		background: url(/media/images/login/login-default.jpg);
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center;
-	}
-
-
-
-	.efeito {
-		opacity: 1;
-		position: relative;
-	}
-	.efeito figure .box-black {
-		position: absolute;
-		width: 100%;
-		height: 0%;
-		left: 0;
-		bottom: 0;
-		opacity: 0;
-		z-index: 1;
-		background-color: #000;
-		transition: all 0.5s ease-in;
-	}
-	.efeito figure {
-		position: relative;
-		width: 350px;
-		height: 150px;
-		vertical-align: middle;
-	}
-	.efeito figcaption {
-		color: #000;
-		position: absolute;
-		opacity: 0;
-		left: 0;
-		bottom: 0;
-		color: #FFF;
-		font-size: 20px;
-		text-align: center;
-		display: block;
-		margin: auto;
-		transform: translateY(0%);
-		transition: all 0.5s ease-in .5s;
-		z-index: 2;
-		width: 100%;
-	}
-	.efeito:hover figure .box-black {
-		opacity: 0.5;
-		height: 100%;
-	}
-	.efeito:hover figure figcaption {
-		opacity: 1;
-		bottom: 30px;
-	}
+.jqoEhE {
+	text-align: center;
+	color: rgb(255, 255, 255);
+	width: 100%;
+	height: 100%;
+	background: url(/static/images/goweek/bg.jpg) center top no-repeat rgb(29, 1, 50);
+}
 
 </style>
+<body>
 
+	<div class="jqoEhE">
+		
 
-
-<link rel="stylesheet" href="https://s3-sa-east-1.amazonaws.com/vivaintra-static-cloud/media/css/bootstrap.min.css" media="screen" />
-<link rel="stylesheet" href="https://s3-sa-east-1.amazonaws.com/vivaintra-static-cloud/library/slick/slick.css" media="screen" />
-<link rel="stylesheet" href="https://s3-sa-east-1.amazonaws.com/vivaintra-static-cloud/library/slick/slick-theme.css" media="screen" />
-<link rel="stylesheet" href="https://s3-sa-east-1.amazonaws.com/vivaintra-static-cloud/media/css/font-awesome.min.css" media="screen" />
-<link rel="stylesheet" href="https://s3-sa-east-1.amazonaws.com/vivaintra-static-cloud/media/css/s7l.css?v=2018-10-16-1" media="screen" />
-<link rel="stylesheet" href="https://s3-sa-east-1.amazonaws.com/vivaintra-static-cloud/media/css/glyphiconmenu.css" media="screen" />
-<link rel="stylesheet" href="https://s3-sa-east-1.amazonaws.com/vivaintra-static-cloud/media/css/intra-empresa/style.login.css?v=2018-10-16-1" media="screen" />
-
-<script type="text/javascript">
-	localStorage.clear();
-</script>
-
-<script src='https://www.google.com/recaptcha/api.js' async defer></script>
-
-
-</head>
-<body id="window" class="legacy-red clearfix background-login">
-	<div class="content-all">
-		<div id="header-container">
-			<nav class="bg-color-primary bg-user" id="menu-header" style="position:fixed">
-				<div class="container clearfix height-full">
-					<div id="logo" class="pull-left padding-h height-full">
-						<h1 class="nomargin table logo-h height-full">
-							<a href="/" class="color-user-reverse table-cell align-middle height-full">
-								dloja
-							</a>
-						</h1>
-					</div>
-
-
-				</div>
-			</nav>
-		</div>        
-
-		<div class="nopadding-h" id="login-container">
-			<div class="content nopadding-xs clearfix">
-				<div id="conteudo-form-login" class="col-md-5 nopadding-xs clearfix margin-bottom">
-					<div class="content-form-login">
-
-						<div class="margin-bottom" id="intranet-login">
-
-							<form aaction="" method="POST"  class="form-horizontal login-form" id="i_recaptcha">
-
-								<label class="control-label visible-ie8 visible-ie9 nopadding-top salesforce-sans text-muted" for="username">E-mail
-								</label>
-								<input type="text" name="nome" id="nome" class="form-control" placeholder="E-mail" value="">
-
-								<label class="control-label visible-ie8 visible-ie9 salesforce-sans text-muted" for="password">Senha
-								</label>
-
-								<input type="password" name="senha" id="senha" class="form-control" placeholder="Senha" value="">
-
-								<div id='recaptcha' class="g-recaptcha" data-sitekey="6Ld2LnYUAAAAAGVz5RFnWwW8y2EJgq8yljn198FL"  data-callback='sendForm' data-size="invisible"></div>
-
-								<button type="submit" name="submit" class=" padding text-center block margin-bottom-p5 margin-top submit noborder color-white arial text-bold btn btn-default" value="Acessar"   >Acessar
-								</button>
-
-								<div class="input-group remember-group margin-top">
-
-									<input type="checkbox" name="rememberMe" id="rememberMe" value="1" class="">
-								</div>
-							</form>
-							<div class="acoes salesforce-sans"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="efeito">
-				<figure>
-					<div class="box-black"></div>
-					<a href="#" target="_blank">
-						<img src="http://placehold.it/350x150">
-					</a>
-					<figcaption>
-						<span>Lorem ipsum dolor sit amet, consectetur adipiscing elit</span>
-					</figcaption>
-				</figure>
-			</div>
-
-			<div class="footer padding-xs display-block salesforce-sans col-md-5">
-				<p class="pull-right">
-
-					2018            Dloja - Todos os direitos reservados.
-				</p>
-			</div>
-
-			<script src="https://s3-sa-east-1.amazonaws.com/vivaintra-static-cloud/library/jquery/jquery-1.11.2.min.js"></script>
-			<script src="https://s3-sa-east-1.amazonaws.com/vivaintra-static-cloud/media/js/login.functions.js"></script>
-			<script src="https://s3-sa-east-1.amazonaws.com/vivaintra-static-cloud/library/slick/slick.min.js"></script>
-			<script src="https://s3-sa-east-1.amazonaws.com/vivaintra-static-cloud/library/bootstrap/js/bootstrap.min.js"></script>
-			<script src="https://s3-sa-east-1.amazonaws.com/vivaintra-static-cloud/media/js/notify.min.js?v=2018-10-16-1"></script>
-			<script type="text/javascript">
-				$(function(){
-					/* Close FlashMessenger */
-					$('.alert button').click(function(){
-						$(this).parent().fadeOut('fast');
-					});
-				});
-			</script>        
-		</div>
 	</div>
 
 
-	<script type="text/javascript">
-
-		let form = document.querySelector('#i_recaptcha');
-
-		form.addEventListener('submit',  e => {
-			e.preventDefault();
-			let name = document.querySelector('#nome');
-			let senha = document.querySelector('#senha');
-
-			if(!name.value || !senha.value) {
-				alert('Nome e Senha são Obrigatorios');
-
-			} else{
-				grecaptcha.execute();
-			}            
-		});
-
-		function sendForm(token){
-
-			let nome = document.querySelector('#nome');
-			let senha = document.querySelector('#senha');
-
-			let dataForm = 'nome='+nome.value+'&senha='+senha.value+'&token='+token;
-
-			$.ajax({
-				type: "POST",
-				url: "form.php",
-				data: dataForm, 
-				success: function(data)
-				{
-					alert(data); 
-				}
-			})
-		}
-	</script>
 </body>
 </html>
